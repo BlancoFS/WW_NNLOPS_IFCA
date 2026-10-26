@@ -2,7 +2,7 @@
 
 Instructions to run the prodiction of WWTo2L2Nu POWHEG+MiNNLO NNLOPS sample in the IFCA T3 environment
 
-** CMS Summer24 campaign settings on **
+**CMS Summer24 campaign settings**
 
 ## LHE,GEN,SIM
 
@@ -45,7 +45,7 @@ Remember that `/gpfs/projects/cms/USERNAME/WWTo2L2Nu_Powheg_MiNNLO_13p6TeV/2024/
 The MiniAODv6 and NanoAODv15 steps are the fastest ones. Repeat the same operation with the **username and prefix** for `doSlurm_NanoAOD.py` and perform:
 
 ```bash
-find /gpfs/projects/cms/USERNAME/WWTo2L2Nu_Powheg_MiNNLO_13p6TeV/2024/Summer24-AOD_0/ -type f > step1_filelist.txt
+find /gpfs/projects/cms/USERNAME/WWTo2L2Nu_Powheg_MiNNLO_13p6TeV/2024/Summer24-AOD_X/ -type f > step1_filelist.txt
 python3 doSlurm_NanoAOD.py -s 1 -nF 50
 sbatch submit_nano.jdl
 ```
