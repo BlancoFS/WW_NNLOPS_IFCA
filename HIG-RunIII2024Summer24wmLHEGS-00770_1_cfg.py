@@ -225,7 +225,7 @@ process = addMonitoring(process)
 # get a value to add to the seed depending on the username
 
 user = os.environ["USER"]
-user_id = int(hashlib.sha256(user.encode()).hexdigest(), 16) # from 0 to 899
+user_id = int(hashlib.sha256(user.encode()).hexdigest(), 16) % 899 + 1 # from 0 to 899
 
 JOBS_PER_BATCH = 500
 job_id = JOBS_PER_BATCH * RPLME_CAMPAIGN + RPLME_INDEX
