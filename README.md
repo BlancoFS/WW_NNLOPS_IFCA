@@ -1,5 +1,9 @@
 # WW_NNLOPS_IFCA
 
+**IMPORTANT**
+
+Everytime a new submission is performed, the `campaign` name need to be updated. For example, from `Summer24_0` to `Summer24_1`.
+
 Instructions to run the prodiction of WWTo2L2Nu POWHEG+MiNNLO NNLOPS sample in the IFCA T3 environment
 
 **CMS Summer24 campaign settings**
